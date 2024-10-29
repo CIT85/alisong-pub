@@ -1,0 +1,50 @@
+body {
+    background-color: #333;
+    color: whitesmoke;
+    font-size: 28px;
+}
+
+a {
+    color: grey;
+}
+
+a:hover, a:active {
+    color:powderblue;
+}
+
+.abouth1 {
+    background-color: #333;
+    width: 33%;
+    text-align: center;
+    margin: auto;
+    padding: 2px;
+}
+
+.abouth2 {
+    background-color: #333;
+    width: 40%;
+    text-align: center;
+    margin: auto;
+    padding: 2px;
+}
+
+.container {
+    background-color: #333;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+hr {
+    background-color: whitesmoke;
+    height: 3px;
+}
+
+table, tr, td, th, caption {
+    border: 3px solid #eee;
+    font-family:'Courier New', Courier, monospace;
+    border-collapse: collapse;
+    padding: .5rem;
+}
