@@ -1,19 +1,18 @@
 body {
-    background-color: #333;
-    color: whitesmoke;
+    background-color: #112039;
+    color: #99e2ff;
     font-size: 28px;
 }
 
 a {
-    color: grey;
+    color: #EA08D7;
 }
 
 a:hover, a:active {
-    color:powderblue;
+    color: #08C23A;
 }
 
 .abouth1 {
-    background-color: #333;
     width: 33%;
     text-align: center;
     margin: auto;
@@ -21,7 +20,6 @@ a:hover, a:active {
 }
 
 .abouth2 {
-    background-color: #333;
     width: 40%;
     text-align: center;
     margin: auto;
@@ -29,7 +27,6 @@ a:hover, a:active {
 }
 
 .container {
-    background-color: #333;
     width: 50%;
     text-align: center;
     margin: auto;
