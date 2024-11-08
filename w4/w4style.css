@@ -1,0 +1,60 @@
+body {
+    background-color: #232b1b;
+    color: #c2c5aa;
+    font-size: 28px;
+    font-family: monospace;
+}
+
+a {
+    color: fuchsia;
+}
+
+a:visited {
+    color: rgb(255, 149, 0);
+}
+
+a:hover, a:focus {
+    color: lime;
+}
+
+a:active {
+    color: gold;
+}
+
+.abouth1 {
+    width: 33%;
+    text-align: center;
+    margin: auto;
+    padding: 2px;
+}
+
+.abouth2 {
+    width: 40%;
+    text-align: center;
+    margin: auto;
+    padding: 2px;
+}
+
+.container {
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+hr {
+    background-color: whitesmoke;
+    height: 3px;
+}
+
+table {
+    margin: auto;
+}
+
+table, tr, td, th, caption {
+    background-color: #7f4f24;
+    border: 5px solid #582f0e;
+    border-collapse: collapse;
+    padding: .5rem;
+}
