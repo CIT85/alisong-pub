@@ -3,10 +3,11 @@ body {
     color: #c2c5aa;
     font-size: 28px;
     font-family: monospace;
+    text-align: center;
 }
 
 a {
-    color: fuchsia;
+    color: #a68a64;
 }
 
 a:visited {
@@ -14,11 +15,11 @@ a:visited {
 }
 
 a:hover, a:focus {
-    color: lime;
+    color: gold;
 }
 
 a:active {
-    color: gold;
+    color: #b75f07;
 }
 
 .abouth1 {
@@ -29,9 +30,10 @@ a:active {
 }
 
 .abouth2 {
-    width: 40%;
+    width: 50%;
     text-align: center;
     margin: auto;
+    margin-bottom: 10px;
     padding: 2px;
 }
 
@@ -48,6 +50,11 @@ hr {
     height: 3px;
 }
 
+ul {
+    list-style-position: inside;
+    list-style-type: '★';
+}
+
 table {
     margin: auto;
 }
@@ -57,4 +64,35 @@ table, tr, td, th, caption {
     border: 5px solid #582f0e;
     border-collapse: collapse;
     padding: .5rem;
+    text-align: center;
+}
+
+form {
+    width: 60%;
+    margin: auto;
+}
+
+fieldset {
+    background-color:#7f4f24;
+    border: 5px dashed #582f0e;
+}
+
+.foodselect {
+    scrollbar-color: #a68a64 #582f0e;
+    color:#582f0e;
+    border: 2px solid #582f0e;
+}
+
+legend {
+    color:#582f0e;
+    background-color:#a68a64
+}
+
+button {
+    background-color: #7f4f24;
+    color: #c2c5aa;
+    border: 2px solid #c2c5aa;
+    padding: 1rem;
+    border-radius: 15px;
+    font-family: monospace;
 }
