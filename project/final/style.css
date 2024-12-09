@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Parkinsans:wght@300..800&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* i added a little default padding because i liked the way it looks with extra space, please let me know if this has to be removed. img element is default image reset */
+
+img {
+    display: block;
+    max-width: 100%;
+    margin: auto;
+    height: auto;
+}
+
+
+p::selection, h1::selection, h2::selection, h3::selection, li::selection, a::selection, img::selection {
+    background: pink;
+    color: #3e3d3d;
+}
+
+body {
+    background-color: #3e3d3d;
+    color: #FBC3E4;
+    font-family: "Zilla Slab", serif;
+    text-align: center;
+    display: block;
+    min-height: 100vh;
+    font-size: 1.5rem;
+    line-height: 2.75rem;
+    text-transform: lowercase;
+    position: relative;
+    letter-spacing: 0.25rem;
+}
+
+/* body styling is affecting the look of the page by making all text lowercase, all text in the center, my chosen font, block display and grey background color. main element adds padding and height to the page */
+
+main {
+    padding: 4rem;
+    height: 100%;
+}
+
+header {
+    padding: 0;
+    background-color: #2d2d2d;
+    color: #ffa1d1;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* header styling sets padding to 0, removes the top margin so the header touches the top, changes colors to palette. h1 selector changes font size and adjusts the padding. header li selector displays the links in a line and removes some extra padding */
+
+h1 {
+    font-size: 3rem;
+    padding: 0.5rem;
+}
+
+header h2 {
+    font-size: 1.5rem;
+    padding-bottom: 0;
+}
+
+nav ul {
+    display: flex;
+}
+
+.navcontainer {
+    display: flex;
+}
+
+header li {
+    padding: 0.75rem;
+    font-size: 1rem;
+    justify-content: space-around;
+    display: flex;
+}
+
+a {
+    color: #ffcde1;
+}
+
+a:visited {
+    color: #ea72a2;
+}
+
+a:hover, a:focus {
+    color: #c29baa;
+}
+
+
+a:active {
+    color: #A76869;
+}
+
+/* all link styling is adjusting the color scheme for the links. h2 and h3 selectors add padding and font size to headings */
+
+h2 {
+    font-size: 3rem;
+    padding: 2rem 0;
+}
+
+h3 {
+    padding: 2rem 0;
+}
+
+article {
+    width: 80%;
+    margin: auto;
+}
+
+/* article selector sets a width for the page content and centers the page content. images class selector adds border and shape to images with that class */
+
+
+.flexcontainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.flexheader {
+    justify-self: center;
+    width: 800px;
+}
+
+.flexitem {
+    width: 300px;
+    padding: 1.5rem 0;
+    font-size: 1rem;
+}
+
+.flexitem img {
+    border: 2px dashed #ffa1d1;
+    border-radius: 15px;
+}
+
+.images {
+    border: 2px dashed #ffa1d1;
+    border-radius: 15px;
+}
+
+mark {
+    background-color: #ffcde1;
+}
+
+/* mark selector changes the color of the highlight on the mark element, and sets the padding to 0. divider adjusts the images that i chose for a divider instead of using hr. this displays them in a line so they form a full length page divider */
+
+.divider {
+    margin: auto;
+    display: inline-block;
+}
+
+ul {
+    list-style-position: inside;
+    list-style-type: '♥';
+}
+
+ul li {
+    padding: 1rem;
+}
+
+/* ul adjusts the styling of the lists so the bullets are shaped like hearts and so they come closer to the text on the bullet points. ul li selector adds padding between the list items on the front page */
+
+ol li {
+    padding: 2.5rem 0;
+}
+
+table {
+    margin: auto;
+}
+
+table, tr, td, th, caption {
+    background-color: #2d2d2d;
+    border: 2px solid #ffa1d1;
+    border-collapse: separate;
+    padding: .5rem;
+    text-align: center;
+}
+
+/* table styling affects the look and spacing on the table. button styling changes the shape, color, and spacing on the button. border radius makes it more rounded. button:hover and button:focus change the look when the button is highlighted and adds shadow to the button */
+
+.abutton {
+    background-color: #2d2d2d;
+    color: #ffa1d1;
+    border: 3px solid #ffa1d1;
+    padding: 1rem;
+    border-radius: 15px;
+    font: 1rem "Zilla Slab", serif;
+    margin: 1.5rem;
+}
+
+.abutton:hover, .abutton:focus {
+    box-shadow: 0 0.5rem 1rem 0 rgba(255, 255, 255, 0.24), 0 0.5rem 1rem 0 rgba(255, 255, 255, 0.19);
+    background-color: #ffa1d1;
+    color: #2d2d2d;
+    border: 4px solid #2d2d2d;
+}
+
+mark {
+    background-color:antiquewhite;
+}
+
+.caption {
+    font-size: 1rem;
+}
+
+/* famous class selectors edit the width and padding of the images and content on the famous ceramics page */
+
+footer {
+    background-color: #2d2d2d;
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex; 
+    justify-content: center;
+}
+
+footer li {
+    display: flex;
+    padding: 1rem;
+}
+
+/* footer selector changes styling of footer and centers the content in the footer. changes position of footer. */
+
+
+
+
+/* media queries will go here */
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    main {
+        justify-content: center;
+        flex-flow: row-wrap;
+        padding: 1rem;
+    }
+
+    header li {
+        padding: 0.5rem;
+    }
+
+    header h2 {
+        display: none;
+    }
+
+    .disappear {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    header h2 {
+        display: none;
+    }
+
+    header li {
+        padding: 0.5rem;
+    }
+    
+    .disappear {
+        display: none;
+    }
+}
