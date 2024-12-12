@@ -212,17 +212,24 @@ article {
 
 .caption {
     font-size: 1.25rem;
+    padding: 1rem;
 }
 
 .paragraph {
     font-size: 1.5rem;
     padding: 1rem 0;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+    background-color: #2d2d2d;
+    border-radius: 20px;
+    padding: 1rem;
 }
 
 mark {
     background-color: #ffcde1;
+    text-shadow: 1px 1px 1px white;
+    font-weight: bold;
 }
+
 
 /* mark selector changes the color of the highlight on the mark element, and sets the padding to 0. divider adjusts the images that i chose for a divider instead of using hr. this displays them in a line so they form a full length page divider */
 
@@ -249,18 +256,11 @@ ul {
     list-style-type: '♥';
 }
 
-ul li {
-    
-}
-
 /* ul adjusts the styling of the lists so the bullets are shaped like hearts and so they come closer to the text on the bullet points. ul li selector adds padding between the list items on the front page */
-
-ol li {
-    padding: 2.5rem 0;
-}
 
 table {
     margin: auto;
+    margin-bottom: 2rem;
 }
 
 table, tr, td, th, caption {
@@ -273,24 +273,39 @@ table, tr, td, th, caption {
 
 /* table styling affects the look and spacing on the table. button styling changes the shape, color, and spacing on the button. border radius makes it more rounded. button:hover and button:focus change the look when the button is highlighted and adds shadow to the button */
 
-.abutton {
+.a-button {
     background-color: #2d2d2d;
     color: #ffcde1;
     text-shadow: 2px 2px 2px black;
     border: 3px solid #ffa1d1;
     padding: 1rem;
     border-radius: 15px;
-    font-size: 1.25rem;
+    font: bold 1.25rem;
     text-decoration: none;
-    margin-top: 1rem;
 }
 
-.abutton:hover, .abutton:focus {
+.a-button:hover, .a-button:focus {
     background-color: #ffa1d1;
     color: #2d2d2d;
     text-shadow: 2px 2px 2px rgb(255, 255, 255);
     border: 4px solid #2d2d2d;
     font: 1.5rem;
+}
+
+.left-image {
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    height: auto;
+    border: 3px dashed #ffa1d1;
+}
+
+.right-image {
+    float: right;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    height: auto;
+    border: 3px dashed #ffa1d1;
 }
 
 /* beginning of form */
@@ -300,6 +315,7 @@ table, tr, td, th, caption {
     flex-wrap: wrap;
     width: 80%;
     margin: auto;
+    font-size: 1.25rem;
     padding: 2rem;
     flex-direction: column;
     background-color: #2d2d2d;
@@ -332,7 +348,7 @@ table, tr, td, th, caption {
 .form select {
     flex: 6; 
     margin-bottom: 1rem;
-    font: 1.75rem 'hearts';
+    font: 1rem 'hearts';
 }
 
 .form > fieldset {
@@ -348,7 +364,7 @@ table, tr, td, th, caption {
     text-shadow: 2px 2px 2px black;
     border: 3px solid #ffa1d1;
     border-radius: 20px;
-    font: bold 2rem 'hearts';
+    font: bold 1.25rem 'hearts';
     letter-spacing: .25rem;
     padding: .5rem 1rem;
 }
@@ -358,7 +374,6 @@ table, tr, td, th, caption {
     color: #2d2d2d;
     text-shadow: 2px 2px 2px white;
     border: 3px solid black;
-    font: bold 2rem 'hearts';
 }
 
 .music, .animal {
@@ -378,7 +393,7 @@ fieldset {
 
 legend {
     padding: 1rem;
-    font: bold 3rem 'hearts';
+    font: bold 2rem 'hearts';
 }
 
 /* end of form */
