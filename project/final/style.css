@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'hearts';
-    src: url('/project/font/S_Hand.ttf');
+    src: url('/project/font/OLDSH___.TTF');
 }
 
 @font-face {
@@ -32,12 +32,13 @@ img {
 *::selection {
     background: pink;
     color: black;
+    text-shadow: 1px 1px 1px white;
 }
 
 body {
     background-color: #3e3d3d;
     color: #FBC3E4;
-    font: 2rem 'hearts';
+    font: 1.5rem 'hearts';
     text-shadow: 2px 2px 2px black;
     text-align: center;
     display: block;
@@ -181,25 +182,25 @@ article {
 /* article selector sets a width for the page content and centers the page content. images class selector adds border and shape to images with that class */
 
 
-.flexcontainer {
+.flex-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
-.flexheader {
+.flex-header {
     justify-self: center;
     width: 800px;
 }
 
-.flexitem {
+.flex-item {
     width: 300px;
     padding: 1.5rem 0;
     font-size: 1rem;
 }
 
-.flexitem img {
+.flex-item img {
     border: 2px dashed #ffa1d1;
     border-radius: 15px;
 }
@@ -207,6 +208,16 @@ article {
 .images {
     border: 2px dashed #ffa1d1;
     border-radius: 15px;
+}
+
+.caption {
+    font-size: 1.25rem;
+}
+
+.paragraph {
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    margin-bottom: 1rem;
 }
 
 mark {
@@ -225,9 +236,21 @@ mark {
     padding: 2rem;
 }
 
+.list {
+    background-color: #2d2d2d;
+    border: 2px dashed #ffa1d1;
+    border-radius: 20px;
+    margin: 1.5rem;
+    padding: 1rem;
+}
+
 ul {
     list-style-position: inside;
     list-style-type: '♥';
+}
+
+ul li {
+    
 }
 
 /* ul adjusts the styling of the lists so the bullets are shaped like hearts and so they come closer to the text on the bullet points. ul li selector adds padding between the list items on the front page */
@@ -252,13 +275,14 @@ table, tr, td, th, caption {
 
 .abutton {
     background-color: #2d2d2d;
-    color: #ffa1d1;
+    color: #ffcde1;
     text-shadow: 2px 2px 2px black;
     border: 3px solid #ffa1d1;
     padding: 1rem;
     border-radius: 15px;
-    font: 1.5rem;
+    font-size: 1.25rem;
     text-decoration: none;
+    margin-top: 1rem;
 }
 
 .abutton:hover, .abutton:focus {
@@ -267,14 +291,6 @@ table, tr, td, th, caption {
     text-shadow: 2px 2px 2px rgb(255, 255, 255);
     border: 4px solid #2d2d2d;
     font: 1.5rem;
-}
-
-mark {
-    background-color:antiquewhite;
-}
-
-.caption {
-    font-size: 1rem;
 }
 
 /* beginning of form */
@@ -383,6 +399,7 @@ footer li {
     padding: 1rem;
     display: inline-block;
     padding: 0 1.5rem;
+    font-size: 1.25rem;
 }
 
 /* footer selector changes styling of footer and centers the content in the footer. changes position of footer. */
