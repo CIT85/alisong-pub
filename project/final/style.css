@@ -1,21 +1,21 @@
 @font-face {
     font-family: 'hearts';
-    src: url('/project/font/OLDSIH__.TTF');
+    src: url('/project/font/S_Hand.ttf');
 }
 
 @font-face {
     font-family: 'divider';
     src: url('/project/font/Cute\ Heart.ttf');
 }
+/* i used font-face to input fonts that i downloaded from dafont.com */
 
+/* beginning of basic reset */
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-/* i added a little default padding because i liked the way it looks with extra space, please let me know if this has to be removed. img element is default image reset */
 
 img {
     display: block;
@@ -24,41 +24,44 @@ img {
     height: auto;
 }
 
+/* end of reset */
 
-p::selection, h1::selection, h2::selection, h3::selection, li::selection, a::selection, img::selection {
+
+/* this selector changes the highlight color */
+
+*::selection {
     background: pink;
-    color: #3e3d3d;
+    color: black;
 }
 
 body {
     background-color: #3e3d3d;
     color: #FBC3E4;
-    font-family: 'hearts';
+    font: 2rem 'hearts';
+    text-shadow: 2px 2px 2px black;
     text-align: center;
     display: block;
     min-height: 100vh;
-    font-size: 1.5rem;
     line-height: 2.75rem;
     text-transform: lowercase;
     position: relative;
     letter-spacing: 0.25rem;
 }
-
-/* body styling is affecting the look of the page by making all text lowercase, all text in the center, my chosen font, block display and grey background color. main element adds padding and height to the page */
+/* body styling is affecting the look of the page by making all text lowercase, all text in the center, my chosen font, block display and grey background color */
 
 main {
     padding: 4rem;
     height: 100%;
 }
+/* adds padding and height to the page */
 
 header {
     padding: 2rem;
     background-color: #2d2d2d;
     color: #ffa1d1;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-wrap: wrap;
-    align-items: center;
 }
 
 /* header styling sets padding to 0, removes the top margin so the header touches the top, changes colors to palette. h1 selector changes font size and adjusts the padding. header li selector displays the links in a line and removes some extra padding */
@@ -66,14 +69,9 @@ header {
 h1 {
     font-family: 'hearts';
     font-size: 3rem;
-    padding: 0.5rem;
 }
 
-/* header h2 {
-    font-size: 1.5rem;
-    padding-bottom: 0;
-} */
-
+/* beginning of dropdown */
 /* all of the dropdown classes below create the dropdown navigation button */
 
 
@@ -83,12 +81,15 @@ h1 {
 }
 
 .dropdown-button {
-    background-color: #2d2d2d;
+    background-color: #3e3d3d;
     color: #ffa1d1;
+    text-shadow: 2px 2px 2px black;
     border: 3px solid #ffa1d1;
     padding: 1rem;
-    border-radius: 15px;
-    font-size: 1rem;
+    border-radius: 20px;
+    font: bold 2rem 'hearts';
+    letter-spacing: .25rem;
+    padding: .75rem 1rem;
 }
 
 .dropdown-content {
@@ -100,19 +101,21 @@ h1 {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     border-radius: 10px;
-    border: 1px solid black;
+    border: 2px solid black;
+    right: 0;
 }
 
 .dropdown-content a {
     display: block;
     text-decoration: none;
-    font-size: 1rem;
-    color:#2d2d2d;
+    font-size: 2rem;
+    text-shadow: 2px 2px 2px rgb(255, 255, 255);
+    color: black;
     padding: 0 1rem;
 }
 
 .dropdown-content a:visited {
-    color: #a83a66;
+    color: rgb(28, 27, 27);
 }
 
 .dropdown-content a:hover,
@@ -130,15 +133,11 @@ h1 {
 .dropdown-navigation:hover .dropdown-button {
     background-color: #ffa1d1;
     color: #2d2d2d;
-    border: 4px solid #2d2d2d;
+    border: 4px solid black;
+    text-shadow: 1px 1px 1px white;
 }
 
-/* header li {
-    padding: 0.75rem;
-    font-size: 1rem;
-    justify-content: space-around;
-    display: flex;
-} */
+/* end of dropdown menu */
 
 a {
     color: #ffcde1;
@@ -217,15 +216,12 @@ mark {
     font-size: 2rem;
     color: #ea72a2;
     letter-spacing: 1rem;
+    padding: 2rem;
 }
 
 ul {
     list-style-position: inside;
     list-style-type: '♥';
-}
-
-ul li {
-    /* padding: 1rem; */
 }
 
 /* ul adjusts the styling of the lists so the bullets are shaped like hearts and so they come closer to the text on the bullet points. ul li selector adds padding between the list items on the front page */
@@ -273,23 +269,63 @@ mark {
     font-size: 1rem;
 }
 
-/* famous class selectors edit the width and padding of the images and content on the famous ceramics page */
+/* beginning of form */
+
+form {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    padding: 2rem;
+    flex-direction: column;
+    background-color: #2d2d2d;
+    color: #ffcde1;
+    text-shadow: 1px 1px 1px black;
+    border-radius: 20px;
+    border: 2px dashed #ffcde1;
+}
+
+form > fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: none;
+}
+
+fieldset {
+    border: none;
+}
+
+legend {
+    padding: 1rem;
+}
+
+form p {
+    padding: 2rem;
+    display: flex;
+}
+
+input {
+    font: 1.75rem 'hearts';
+}
+
+/* end of form */
 
 footer {
     background-color: #2d2d2d;
     text-align: center;
     padding: 2rem;
     position: relative;
+    text-shadow: none;
     bottom: 0;
     left: 0;
     right: 0;
-    display: flex; 
     justify-content: center;
 }
 
 footer li {
-    display: flex;
     padding: 1rem;
+    display: inline-block;
+    padding: 0 1.5rem;
 }
 
 /* footer selector changes styling of footer and centers the content in the footer. changes position of footer. */
