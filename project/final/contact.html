@@ -15,6 +15,7 @@
         <nav aria-label="primary-navigation" class="dropdown-navigation">
             <button class="dropdown-button">menu &hearts;</button>
             <ul class="dropdown-content">
+                <li><h2 class="nav-h2">menu</h2></li>
                 <li>
                     <a href="index.html">home</a>
                 </li>
@@ -46,155 +47,86 @@
             <figcaption class="divider">abcdefghijklmnopqrstuv</figcaption>
         </figure>
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quis exercitationem maxime neque consequatur, tenetur dolores totam odit recusandae quasi atque repellendus reprehenderit blanditiis enim sapiente officiis? Aliquam vel, magnam qui distinctio nesciunt voluptas dolor beatae fuga, corrupti nihil, perferendis ullam quisquam quia. Cumque aspernatur iusto quam, accusamus numquam optio assumenda dolorum sit atque alias molestias praesentium fugiat cupiditate delectus sed dolorem quos quidem est mollitia facere. Debitis accusamus magnam maxime velit consequatur deserunt doloribus vero, quod, adipisci laboriosam quisquam error quasi? Ipsam doloremque voluptas, tempore eveniet molestias earum odit animi quae nisi debitis quisquam. Exercitationem harum, officiis inventore ipsum quos minima porro cumque expedita explicabo, beatae ducimus dignissimos autem rerum, reprehenderit perspiciatis. Aperiam itaque iusto distinctio ullam alias, suscipit corporis quo quis earum doloremque?</p>
-
-        <!-- <section>
-            <form action="https://httpbin.org/get" method="get">
-                <fieldset>
-                    <legend>personal info:</legend>
-                        <p>
-                            <label for="firstName">first name:</label>
-                            <input type="text" name="firstName" id="firstName" placeholder="mary jane" autocomplete="on" required autofocus>
-                        </p>
-                        <p>
-                            <label for="lastName">last name:</label>
-                            <input type="text" name="lastName" id="lastName" placeholder="doe" autocomplete="on" required>
-                        </p>
-                        <p>
-                            <label for="password">password:</label>
-                            <input type="password" name="password" id="password" placeholder="your secret" required>
-                        </p>
-                        <p>
-                            <label for="phoneNumber">phone number:</label>
-                            <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="559-555-6789" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
-                        </p>
-                        <p>
-                            <label for="number">favorite number:</label>
-                            <input type="number" name="number" id="number" value="777" min="0" max="1000" step="10">
-                        </p>
-                </fieldset>
-
-                <fieldset>
-                    <legend>favorite food:</legend>
-                        <p>
-                            <input type="radio" name="food" id="tacos" value="tacos">
-                            <label for="tacos">tacos</label>
-                        </p>
-                        <p>
-                            <input type="radio" name="food" id="burgers" value="burgers">
-                            <label for="burgers">burgers</label>
-                        </p>
-                        <p>
-                            <input type="radio" name="food" id="pizza" value="pizza">
-                            <label for="pizza">pizza</label>
-                        </p>
-                        <p>
-                            <input type="radio" name="food" id="other" value="other">
-                            <label for="other">other</label>
-                        </p>
-                </fieldset>
-
-                <fieldset>
-                    <legend>do you have any pets?</legend>
-                        <p>
-                            <input type="checkbox" name="pets" id="dog" value="dog">
-                            <label for="dog">dog</label>
-                        </p>
-                        <p>
-                            <input type="checkbox" name="pets" id="cat" value="cat">
-                            <label for="cat">cat</label>
-                        </p>
-                        <p>
-                            <input type="checkbox" name="pets" id="bunny" value="bunny">
-                            <label for="bunny">bunny</label>
-                        </p>
-                        <p>
-                            <input type="checkbox" name="pets" id="otherpet" value="other">
-                            <label for="other">other</label>
-                        </p>
-                </fieldset>
-                        
-                <fieldset>
-                    <legend>send me a note</legend>
-                        <label for="message">your message</label>
-                        <textarea name="message" id="message" cols="30" rows="10" placeholder="type your message here"></textarea>
-                </fieldset>
-                <button type="submit">submit</button>
-                <button type="submit" formaction="https://httpbin.org/post" formmethod="post">post</button>
-                <button type="reset">reset</button>
-            </form>
-        </section> -->
+        <p>my name is alison and i am a coding student at fresno city college. i love coding and find it really fun. i want to become a web developer or something along those lines, someday. my hobbies include pottery, yoga, reading, crafting, and video games among others. my friends and family are really important to me and i love spending time with them. i created this website to practice and improve upon my html and css skills. this has been good practice and now i have another website to add to my portfolio.</p>
 
         <form class="form">
             <fieldset class="row">
                 <fieldset class="column">
                     <legend>personal information:</legend>
-                    <label for="firstName">first name:</label>
-                    <input type="text" name="firstName" id="firstName" placeholder="mary jane" autocomplete="on" required>
 
-                    <label for="lastName">last name:</label>
-                    <input type="text" name="lastName" id="lastName" placeholder="doe" autocomplete="on" required>
+                    <figure class="input-group">
+                        <label for="firstName">first name:</label>
+                        <input type="text" name="firstName" id="firstName" placeholder="mary jane" autocomplete="on" required>
+                    </figure>
 
-                    <label for="phoneNumber">phone number:</label>
-                    <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="(678)999-8212" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
+                    <figure class="input-group">
+                        <label for="lastName">last name:</label>
+                        <input type="text" name="lastName" id="lastName" placeholder="doe" autocomplete="on" required>
+                    </figure>
+
+                    <figure class="input-group">
+                        <label for="phoneNumber">phone number:</label>
+                        <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="(678)999-8212" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
+                    </figure>
             
-                    <label for="email_address">email:</label>
-                    <input type="email" id="email" name="email" placeholder="maryjane@gmail.com">
+                    <figure class="input-group">
+                        <label for="email">email:</label>
+                        <input type="email" id="email" name="email" placeholder="maryjane@gmail.com">
+                    </figure>
                 </fieldset>
             
                 <fieldset>
-                    <legend>some questions i have for you...</legend>
+                    <legend>some questions i have for you:</legend>
 
-                    <label for="pickup_time">what is your birthday?</label>
-                    <input type="date" id="birthday">
-            
-                    <label for="food">favorite food:</label>
-                    <select id="food">
-                        <option value="select" selected="selected">select one</option>
-                        <option value="tacos">tacos</option>
-                        <option value="pizza">pizza</option>
-                        <option value="ramen">ramen</option>
-                        <option value="curry">curry</option>
-                        <option value="burgers">burgers</option>
-                    </select>
-            
-                    <label for="number">favorite number:</label>
-                    <input type="number" name="number" id="number" value="777" min="0" max="1000" step="10">
-
-                    <label for="color">favorite color:</label>
-                    <input type="color" name="color" id="color" />
+                    <figure class="input-group">
+                        <label for="birthday">what is your birthday?</label>
+                        <input type="date" id="birthday">
+                    </figure>
+                    
+                    <figure class="input-group">
+                        <label for="food">favorite food:</label>
+                        <select id="food">
+                            <option value="select" selected="selected">select one</option>
+                            <option value="tacos">tacos</option>
+                            <option value="pizza">pizza</option>
+                            <option value="ramen">ramen</option>
+                            <option value="curry">curry</option>
+                            <option value="burgers">burgers</option>
+                        </select>
+                    </figure>
+                    
+                    <figure class="input-group">
+                        <label for="number">favorite number:</label>
+                        <input type="number" name="number" id="number" value="777" min="0" max="1000" step="10">
+                    </figure>
+                    <figure class="input-group">
+                        <label for="color">favorite color:</label>
+                        <input type="color" name="color" id="color">
+                    </figure>
             
                 </fieldset>
             
                 <fieldset class="music">
                     <legend>favorite music:</legend>
-                    <input type="radio" name="music" id="pop" value="pop">
-                        <label for="pop">pop</label>
-                    <input type="radio" name="music" id="indie" value="indie">
-                        <label for="indie">indie</label>
-                    <input type="radio" name="music" id="emo" value="emo">
-                        <label for="emo">emo</label>
-                    <input type="radio" name="music" id="rap" value="rap">
-                        <label for="rap">rap</label>
-                    <input type="radio" name="music" id="jazz" value="jazz">
-                        <label for="jazz">jazz</label>
+                        <label for="pop"><input type="radio" name="music" id="pop" value="pop">pop</label>
+                        <label for="indie"><input type="radio" name="music" id="indie" value="indie">indie</label>
+                        <label for="emo"><input type="radio" name="music" id="emo" value="emo">emo</label>
+                        <label for="rap"><input type="radio" name="music" id="rap" value="rap">rap</label>
+                        <label for="jazz"><input type="radio" name="music" id="jazz" value="jazz">jazz</label>
                 </fieldset>
             
                 <fieldset class="animal">
-                    <legend>what kinds of pets do you have?</legend>
-                    <input type="checkbox" name="pets" id="dog" value="dog">
-                    <label for="dog">dog</label>
-                    <input type="checkbox" name="pets" id="cat" value="cat">
-                    <label for="cat">cat</label>
-                    <input type="checkbox" name="pets" id="hamster" value="hamster">
-                    <label for="hamster">hamster</label>
-                    <input type="checkbox" name="pets" id="otherpet" value="other">
-                    <label for="other">other</label>
+                    <legend>do you have pets?</legend>
+                        <label for="dog"><input type="checkbox" name="pets" id="dog" value="dog">dog</label>
+                        <label for="cat"><input type="checkbox" name="pets" id="cat" value="cat">cat</label>
+                        <label for="fish"><input type="checkbox" name="pets" id="fish" value="fish">fish</label>
+                        <label for="hamster"><input type="checkbox" name="pets" id="hamster" value="hamster">hamster</label>
+                        <label for="otherpet"><input type="checkbox" name="pets" id="otherpet" value="otherpet">other</label>
                 </fieldset>
             </fieldset>
                 
             <fieldset>
-                <button id="submit">Submit</button>
+                <button id="submit" type="submit">submit</button>
             </fieldset>
         </form>
 
