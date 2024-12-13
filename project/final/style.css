@@ -423,7 +423,7 @@ footer li {
 
 /* media queries will go here */
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     main {
         justify-content: center;
         flex-flow: wrap;
@@ -434,20 +434,34 @@ footer li {
         padding: 0.5rem;
     }
 
-    header h2 {
-        display: none;
+    .dropdown-button {
+        font-size: 1rem;
     }
 
     .disappear {
         display: none;
     }
-}
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
-    header h2 {
+    .divider {
         display: none;
     }
 
+    .a-button {
+        font-size: 1rem;
+    }
+
+    iframe {
+        width: 90%;
+    }
+
+    table, tr, td, th, caption {
+        display: block;
+        padding: .5rem;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
     header li {
         padding: 0.5rem;
     }
