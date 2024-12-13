@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'hearts';
-    src: url('../project/font/OLDSH___.TTF');
+    src: url('font/OLDSH___.TTF');
 }
 
 @font-face {
     font-family: 'divider';
-    src: url('../project/font/Cute\ Heart.ttf');
+    src: url('font/Cute\ Heart.ttf');
 }
 /* i used font-face to input fonts that i downloaded from dafont.com */
 
@@ -397,6 +397,18 @@ legend {
 }
 
 /* end of form */
+
+.cover {
+    height: 300px;
+    width: 50%;
+    background-image: url('/project/img/glaze-speckles.jpg');
+    background-size: cover;
+    color: white;
+    margin-top: 3rem;
+    border: 3px dashed #c29baa;
+    text-shadow: 2px 2px 2px black;
+    border-radius: 15px;
+}
 
 footer {
     background-color: #2d2d2d;
