@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'hearts';
-    src: url('/font/OLDSH___.TTF');
+    src: url('./font/OLDSH___.TTF');
 }
 
 @font-face {
     font-family: 'divider';
-    src: url('/font/Cute\ Heart.ttf');
+    src: url('./font/Cute\ Heart.ttf');
 }
 /* i used font-face to input fonts that i downloaded from dafont.com */
 
